@@ -1,0 +1,7 @@
+{
+  "name": "demo-entrega-continua",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
