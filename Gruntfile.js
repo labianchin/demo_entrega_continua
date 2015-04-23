@@ -16,6 +16,8 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-gh-pages');
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -27,6 +29,13 @@ module.exports = function (grunt) {
 
     // Project settings
     config: config,
+
+   'gh-pages': {
+       options: {
+             base: 'dist'
+           },
+       src: ['**']
+     },
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
